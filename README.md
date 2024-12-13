@@ -1,7 +1,5 @@
 # Integração CRM e ERP com AWS Lambda e S3
 
-## Este **README.md** contém todas as informações sobre o projeto, incluindo as instruções de **instalação**, **como usar**, **deploy**, e outros detalhes importantes.
-
 Este projeto implementa uma integração simples entre dois sistemas fictícios (CRM e ERP), utilizando AWS Lambda e S3. A infraestrutura é gerenciada via Serverless Framework.
 
 ## Tabela de Conteúdos
@@ -21,21 +19,28 @@ Este projeto implementa uma integração simples entre dois sistemas fictícios 
 
 ## Instalação
 - Clone o repositório:
+  ```bash
   git clone https://github.com/usuario/serverless_framework.git
 - Acesse a pasta do projeto:
+  ```bash
   cd serverless_framework
 - Instale as dependências do projeto. Se você já tem o Node.js e o Serverless Framework instalados, execute:
+  ```bash
   npm install
 - Configure suas credenciais AWS: Certifique-se de ter o AWS CLI configurado. Se ainda não tiver, execute o seguinte comando e forneça suas credenciais AWS:
+  ```bash
   aws configure
 - Se necessário, instale o Serverless Framework globalmente: Caso não tenha o Serverless Framework instalado, faça isso com:
+  ```bash
   npm install -g serverless
 
 ## Como usar
 - Execute o seguinte comando para fazer o deploy da infraestrutura na AWS (Lambda e S3):
+  ```bash
   serverless deploy
 - Isso criará as funções Lambda e o bucket S3 na AWS de acordo com a configuração definida no serverless.yml.
 - Para invocar a função Lambda, utilize o comando:
+  ```bash
   serverless invoke --function nome_da_funcao
 
 ## Testando a aplicação
@@ -51,3 +56,7 @@ Este projeto implementa uma integração simples entre dois sistemas fictícios 
 - Para realizar o deploy da infraestrutura na AWS, basta rodar o seguinte comando dentro da pasta do projeto:
   serverless deploy
 - Este comando irá provisionar os recursos necessários na AWS, como funções Lambda e o bucket S3, utilizando a configuração definida no arquivo serverless.yml. Após o deploy, você pode verificar o funcionamento do sistema através da invocação das funções ou por meio do log gerado.
+
+## Licença
+```markdown
+Este **README.md** contém todas as informações sobre o projeto, incluindo as instruções de **instalação**, **como usar**, **deploy**, e outros detalhes importantes.
